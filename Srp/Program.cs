@@ -1,12 +1,16 @@
-﻿using Srp.Utils;
+﻿#region
+
+using Srp.Utils;
+
+#endregion
 
 namespace Srp
 {
     internal class Program
     {
         /// <summary>
-        /// Single Responsability Principle:
-        /// A class should have one and only one reason to change, meaning that a class should have only one job
+        ///     Single Responsability Principle:
+        ///     A class should have one and only one reason to change, meaning that a class should have only one job
         /// </summary>
         /// <param name="args"></param>
         private static void Main(string[] args)

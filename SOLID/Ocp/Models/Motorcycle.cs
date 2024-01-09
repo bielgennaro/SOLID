@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace Ocp.Models
 {
-    class Motorcycle : Vehicle
+    internal class Motorcycle : Vehicle
     {
-
         public Motorcycle(string color, int engine, int year) : base(color, engine, year)
         {
             ConfigureMotorcycle();

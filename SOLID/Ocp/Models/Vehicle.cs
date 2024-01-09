@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace Ocp.Models
 {
-    class Vehicle
+    internal class Vehicle : IVehicle
     {
         protected string Color;
         protected double Engine;
         protected int Year;
 
-        public Vehicle(string color, double engine, int year) 
+        public Vehicle(string color, double engine, int year)
         {
             Color = color;
             Engine = engine;

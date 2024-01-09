@@ -1,20 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace Ocp.Models
 {
-    class Car : Vehicle
+    internal class Car : Vehicle
     {
-        private int Doors;
-        private int Seats;
+        private readonly int Doors;
+        private readonly int Seats;
 
-        public Car(string color, double engine, int year, int doors, int seats): base(color, engine, year)
+        public Car(string color, double engine, int year, int doors, int seats) : base(color, engine, year)
         {
-            this.Seats = seats;
-            this.Doors = doors;
+            Seats = seats;
+            Doors = doors;
 
             ConfigureCar();
         }
